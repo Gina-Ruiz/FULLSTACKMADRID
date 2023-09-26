@@ -1,10 +1,21 @@
-/* html {
+:root {
+
+    --colorPrincipal: #f76666;
+    --colorSecundario: #02052f;
+    /* --fuentePrincipal:'Fuggles', cursive; */
+
+}
+
+html {
     font-size: 62.5%;
 }
 
 body {
     font-size: 16px;
-} */
+    /* background-color: var(--colorPrincipal); */
+    /* font-family: var(--fuentePrincipal) */
+    font-family: open sans-serif;
+}
 
 /* ESTO ME PERMITE CONSEGUIR 10PX = 1 REM 
 SIN ESO 16PX = 1 REM */
@@ -27,7 +38,7 @@ h1 {
 
 body {
     background-color: white;
-} */ 
+} */
 
 
 
@@ -112,14 +123,14 @@ SELECCION DE ID */
 } */
 
 
-h1{
-    color: white;
+h1 {
+    color: #fff;
     font-size: 47px;
-    background: rgba(248, 102, 102, 0.65);
+    background: #f86666a6;
     font-weight: 800;
     padding: 35px;
     margin-bottom: 10px;
-    font-family:'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.2;
     margin-top: 0;
     box-sizing: border-box;
@@ -127,6 +138,13 @@ h1{
     margin-inline-start: 0px;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
-    
+    display: block;
+    font-size: 47px;
+    text-align: left;
+
+
 }
-}
+
+/* .ejercicioColor {
+    color: var(--colorPrincipal)
+} */
