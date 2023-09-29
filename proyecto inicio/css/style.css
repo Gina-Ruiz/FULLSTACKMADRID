@@ -414,19 +414,8 @@ margin-bottom: 150px;
 display: flex;
 justify-content: center;
     
-}
-
-
-/* ESTILOS SECCION VIDEO */
-
-.video {
-
-display: flex;
-justify-content: center;
 
 }
-
-
 
 .seccionPidenoslo a:hover{
 
@@ -436,6 +425,15 @@ text-decoration: underline;
 
 }
 
+/* ESTILOS SECCION VIDEO */
+
+.video {
+
+display: flex;
+justify-content: center;
+margin-bottom: 70px;
+
+}
 
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 

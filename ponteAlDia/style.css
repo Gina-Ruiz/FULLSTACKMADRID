@@ -1,0 +1,130 @@
+.selectorCadenaDescendente div h2 {
+
+    background-color: blue;
+    height: 100px;
+
+
+}
+
+
+
+.selectorDeTodosLosHijos>div>h2 {
+
+
+    background-color: blue;
+    height: 100px;
+
+}
+
+.margin1 {
+
+    margin: 50px;
+    height: 200px;
+    background-color: yellow;
+
+}
+
+
+.padding2 {
+
+    padding: 50px;
+    height: 200px;
+    background-color: violet;
+
+}
+
+
+
+.display>p {
+    background-color: aqua;
+
+}
+
+.display a {
+    background-color: deeppink;
+
+}
+
+.display h1 {
+    background-color: red;
+
+}
+
+.display h3 {
+    background-color: violet;
+
+}
+
+.display h6 {
+    background-color: darkkhaki;
+
+}
+
+.display div {
+    background-color: chartreuse;
+
+}
+
+/* PARTE2 */
+
+
+.display2 p {
+    background-color: aqua;
+    display: inline;
+}
+
+.display2 a {
+    background-color: deeppink;
+    display: block;
+}
+
+.display2 h1 {
+    background-color: red;
+    display: inline;
+}
+
+.display2 h3 {
+    background-color: violet;
+    display: inline;
+}
+
+.display2 h6 {
+    background-color: darkkhaki;
+    display: inline;
+}
+
+.display2 div {
+    background-color: chartreuse;
+    display: inline;
+}
+
+.display2>div>p {
+    background-color: chartreuse;
+    display: inline;
+}
+
+
+
+
+
+.row1 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: green;
+
+
+}
+
+.column2 {
+     width: 300px;     /* ancho*/
+    height: 300px;      /* alto*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: blue;
+}
