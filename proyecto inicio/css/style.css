@@ -372,15 +372,15 @@ h1 {
 /* ESTILOS SECCION PIDENOSLO */
 
 
-.seccionPidenoslo{
+.seccionPidenoslo {
 
-margin-bottom: 150px;
+    margin-bottom: 150px;
 
 
 }
 
 
-.seccionPidenoslo h3{
+.seccionPidenoslo h3 {
 
     color: var(--colorSecundario);
     font-weight: 800;
@@ -392,35 +392,35 @@ margin-bottom: 150px;
 
 }
 
-.seccionPidenoslo a{
+.seccionPidenoslo a {
 
-background-color: var(--colorPrincipal);
-color: #fff;
-font-weight: 700;
-float: none;
-padding: 20px 40px;
-border-radius: 96px;
-margin-top: 40px;
-display: inline-block;
-text-decoration: none;
-text-transform: uppercase;
-font-family: var(--fuentePrincipal);
-margin-bottom: 150px;
-
-}
-
-.seccionPidenoslo div{
-
-display: flex;
-justify-content: center;
-    
+    background-color: var(--colorPrincipal);
+    color: #fff;
+    font-weight: 700;
+    float: none;
+    padding: 20px 40px;
+    border-radius: 96px;
+    margin-top: 40px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    margin-bottom: 150px;
 
 }
 
-.seccionPidenoslo a:hover{
+.seccionPidenoslo div {
 
-background-color: var(--colorSecundario);
-text-decoration: underline;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.seccionPidenoslo a:hover {
+
+    background-color: var(--colorSecundario);
+    text-decoration: underline;
 
 
 }
@@ -429,29 +429,317 @@ text-decoration: underline;
 
 .video {
 
-display: flex;
-justify-content: center;
-margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
 
 }
 
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 
+.seccionParaQuien {
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: ;
+}
 
 
-/* ESTILOS LOCALIZACIONES */
+.seccionParaQuien>div {
 
-.localizaciones {
-
-    background-color: black;
-    color: #fff;
+    flex: 1;
+    max-width: 50%;
 
 
 }
 
+
+.seccionParaQuien h3 {
+
+    color: var(--colorPrincipal);
+    font-family: var(--fuentePrincipal);
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+
+.seccionParaQuien h2 {
+
+    font-family: var(--fuentePrincipal);
+    color: var(--colorSecundario);
+    font-weight: 800;
+    font-size: 2.7rem;
+    margin-bottom: 22px;
+
+}
+
+
+
+.paraQuienIzquierda {
+
+    margin-right: 15px;
+
+}
+
+
+.paraQuienDerecha {
+
+    margin-right: 15px;
+
+
+}
+
+
+.seccionParaQuien p {
+
+    font-family: var(--fuentePrincipal);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    color: var(--colorSecundario);
+
+
+}
+
+
+.seccionParaQuien span {
+    font-weight: 800;
+
+}
+
+.paraQuienIzquierda h4 {
+
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    font-size: 1.45em;
+    line-height: 1.8;
+}
+
+.paraQuienIzquierda a {
+
+    color: var(--colorPrincipal);
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.paraQuienIzquierda h5 {
+
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--colorSecundario);
+    margin-bottom: 25px;
+
+}
+
+.paraQuienIzquierda .botonInfografia {
+    background-color: var(--colorPrincipal);
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 40px;
+    display: inline-block;
+}
+
+
+.paraQuienDerecha {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    margin-top: 60px;
+}
+
+.paraQuienDerechaSup {
+
+    background-color: var(--colorPrincipal);
+    padding: 60px 30px;
+
+
+}
+
+.paraQuienDerechaSup h5 {
+
+    font-family: var(--fuentePrincipal);
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 10;
+
+}
+
+.paraQuienDerechaSup .destacarAzul {
+
+    color: var(--colorSecundario);
+
+
+}
+
+.paraQuienDerechaSup span {
+
+    color: black;
+
+}
+
+.paraQuienDerechaInf {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -60px;
+    margin-right: 40px;
+
+}
+
+.paraQuienDerechaInf img {
+
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+
+}
+
+.paraQuienDerechaInf h4 {
+
+
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    padding: 30px;
+    width: 250px;
+    text-align: left;
+}
+
+.paraQuienDerechaInf span {
+
+    color: var(--colorPrincipal);
+
+}
+
+
+
+/* ESTILOS LOCALIZACIONES */
+
+.localizaciones  {
+
+    background-color: black;
+    color: #fff;
+    padding: 100px 0 ;
+    text-transform: uppercase;
+    
+}
+
+.localizaciones .contenedor {
+
+display:flex;
+
+}
+
+.localizaciones .contenedor div{
+
+width: 25%;
+padding: 25px 0px;
+color:white;
+
+
+}
+
+.localizaciones  h2{
+
+color: #fff;
+font-size: 27px;
+font-weight: 700px;
+font-family: var(--fuenteBotton);
+margin-bottom: 40px;
+}
+
+
+
 /* ESTILOS CONTACTAR */
 
 
+
+.contactar {
+
+background-color: var(--colorPrincipal);
+color: #fff;
+text-transform: uppercase;
+padding: 40px 0;
+
+}
+
+.contactar .contenedor >h3{
+
+
+color: #fff;
+font-size: 17px;
+margin-bottom: 22px;
+font-weight: 300;
+font-family: var(--fuentePrincipal);
+text-transform: uppercase;
+
+
+}
+
+.contactar .contenedor >h2{
+
+
+    color: #fff;
+    margin-bottom: 22px;
+    font-weight: 800;
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+
+
+}
+
+.contactos {
+    display: flex;
+
+}
+
+.contactos img {
+    margin-right: 15px;
+}
+
+
+.contacto1{
+background-color: white;
+margin-right: 15px;
+border-radius: 0.55rem;
+
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+flex: 1;
+max-width: 50%;
+padding: 20;
+
+}
+
+.contacto2 {
+
+
+background-color: white;
+margin-right: 15px;
+border-radius: 0.55rem;
+
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+flex: 1;
+max-width: 50%;
+padding: 20;
+
+}
 
 /* ESTILOS FOOTER */
 
