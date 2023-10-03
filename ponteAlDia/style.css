@@ -120,11 +120,175 @@
 }
 
 .column2 {
-     width: 300px;     /* ancho*/
-    height: 300px;      /* alto*/
+    width: 300px;
+    /* ancho*/
+    height: 300px;
+    /* alto*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: end;
     background-color: blue;
+}
+
+
+
+/* EJERCICIO 1 */
+
+
+.fila {
+
+    display: flex;
+
+
+
+}
+
+
+.dos {
+
+    width: 20%;
+    text-align: center;
+    background-color: purple;
+
+}
+
+.tres {
+
+    width: 30%;
+    text-align: center;
+    background-color: blue;
+
+}
+
+.cinco {
+
+    width: 50%;
+    text-align: center;
+    background-color: palevioletred;
+
+}
+
+
+
+/* EJERCICIO 2 */
+
+
+
+
+.ejercicio2 {
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.columna1 {
+
+    background-color: yellow;
+    height: 100px;
+    margin-bottom: 5px;
+
+}
+
+.columna2 {
+
+    background-color: red;
+    height: 200px;
+    margin-top: 5px;
+}
+
+
+/* EJERCICIO3 */
+
+.ejercicio3 {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.porcentaje1 {
+
+    background-color: blueviolet;
+    width: 40%;
+}
+
+.porcentaje2 {
+
+    background-color: pink;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tres {
+
+    width: 30%;
+    background-color: aqua;
+
+}
+
+.siete {
+
+    width: 70%;
+    background-color: brown;
+}
+
+.ejemploMQ {
+
+    height: 500px;
+
+}
+
+@media (max-width:350px) and (min-width:0px) {
+
+    .ejemploMQ {
+
+        background-color: green;
+
+    }
+
+}
+
+@media (max-width:616px) and (min-width:350px) {
+
+    .ejemploMQ {
+
+        background-color: red;
+
+    }
+
+}
+
+@media (max-width:933px) and (min-width:616px) {
+
+    .ejemploMQ {
+
+        background-color: blue;
+
+    }
+
+}
+
+@media (max-width:1131px) and (min-width:933px) {
+
+    .ejemploMQ {
+
+        background-color:yellow;
+
+    }
+
+}
+
+@media  (min-width:1131px) {
+
+    .ejemploMQ {
+
+        background-color: brown;
+
+    }
+
 }
