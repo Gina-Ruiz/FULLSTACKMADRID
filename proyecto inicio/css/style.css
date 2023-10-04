@@ -17,6 +17,8 @@ body {
     /* font-family: var(--fuentePrincipal) */
     font-family: 'Open Sans', sans-serif;
     /* background-color: red; */
+
+
 }
 
 /* 
@@ -189,18 +191,19 @@ SELECCION DE ID */
 
 /* formato tablet */
 @media (max-width:1140px) and (min-width:768px) {
-.contenedor{
-    max-width: 80%;
-    margin: 0 auto;
+    .contenedor {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+
 }
 
-    
-}
 /* formato telefono */
-@media (max-width:768px){
+@media (max-width:768px) {
 
 
-    .contenedor{
+    .contenedor {
         max-width: 90%;
         margin: 0 auto;
     }
@@ -218,7 +221,16 @@ SELECCION DE ID */
 }
 
 .margenDerecho {
-    margin-right: 35%;
+    margin-right: 33%;
+
+}
+
+
+@media (max-width:1140px) {
+    .marginDerecho {
+        margin-right: 0;
+
+    }
 
 }
 
@@ -235,6 +247,21 @@ h1 {
 
 }
 
+/* ESTOS SON MODIFICADORES
+
+h1::after{
+
+content: "texto con pseudoelemento";
+
+}
+
+h1::before{
+content: "texto con pseudoelemento"; */
+
+/* } */
+
+
+
 .imagenDeFondo a {
 
     background-color: black;
@@ -250,10 +277,24 @@ h1 {
 
 
 
+@media (max-width:768px) {
+    .imagenDeFondo a {
+        padding: 24px 70px;
+    }
+}
+
+
+
 .flexMain {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.flexMain img {
+
+    margin-right: 10px;
+
 }
 
 /* ESTILOS PARA LA IMAGEN DE CORPORACIONES  */
@@ -269,6 +310,43 @@ h1 {
     margin-top: -120px;
     border-radius: 12px;
 }
+
+@media (max-width:1140px) and (min-width:768px) {
+    .logos {
+        padding: 20px 40px;
+    }
+
+    [src="img/Logos-oficiales.png"] {
+
+        max-width: 70%;
+    }
+
+    [ src="img/Logo-Adecco.png"] {
+
+        max-width: 30%;
+
+    }
+
+}
+
+@media (max-width:768px) {
+    .logos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .logos img {
+
+        max-width: 90%;
+        margin: 20px;
+
+    }
+
+}
+
 
 /* ESTILOS SECCION CURSOS  */
 
@@ -349,6 +427,18 @@ h1 {
 
 }
 
+
+@media (max-width:768px) {
+    .cursosOfertados {
+        flex-direction: column;
+
+    }
+
+
+
+}
+
+
 .cursosOfertados>div {
 
 
@@ -360,6 +450,28 @@ h1 {
     justify-content: space-between;
     height: 300px;
 }
+
+@media (max-width:1140px) {
+
+    .cursosOfertados>div {
+
+        padding: 20px 30px;
+
+    }
+}
+
+@media (max-width:768px) {
+
+    .cursosOfertados>div {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+
+}
+
 
 .Marketing {
 
@@ -373,12 +485,14 @@ h1 {
 
 .videojuegos {
 
+
     background-image: url(../img/Curso-programacion-videojuegos-centro.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
     margin-left: 15px;
 }
+
 
 
 .cursosOfertados div h2 {
@@ -405,6 +519,9 @@ h1 {
 
 
 }
+
+
+
 
 /* ESTILOS SECCION PIDENOSLO */
 
@@ -472,6 +589,25 @@ h1 {
 
 }
 
+
+@media (max-width:1140px) {
+    .video iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .video iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
+
+
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 
 .seccionParaQuien {
@@ -479,6 +615,13 @@ h1 {
     display: flex;
     flex-direction: row;
     margin-bottom: 100px;
+}
+
+@media (max-width:1140px) {
+    .seccionParaQuien {
+
+        flex-direction: column;
+    }
 }
 
 
@@ -490,6 +633,14 @@ h1 {
 
 }
 
+@media (max-width:1140px) {
+    .seccionParaQuien>div {
+
+        flex: 1;
+        max-width: 100%;
+    }
+}
+
 
 .seccionParaQuien h3 {
 
@@ -497,6 +648,7 @@ h1 {
     font-family: var(--fuentePrincipal);
     font-weight: 600;
     font-size: 1.7rem;
+    text-transform: uppercase;
 }
 
 
@@ -685,8 +837,35 @@ h1 {
     width: 25%;
     padding: 25px 0px;
     color: white;
+    margin: 0;
+
+}
+
+@media (max-width:1140px) {
+
+    .localizaciones .contenedor div {
+
+        width: 50%;
 
 
+    }
+
+
+}
+
+
+@media (max-width:768px) {
+
+    .localizaciones .contenedor {
+        flex-wrap: wrap;
+    }
+
+    .localizaciones .contenedor div {
+
+        width: 100%;
+
+
+    }
 }
 
 .localizaciones h2 {

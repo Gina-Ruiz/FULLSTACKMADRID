@@ -277,13 +277,13 @@
 
     .ejemploMQ {
 
-        background-color:yellow;
+        background-color: yellow;
 
     }
 
 }
 
-@media  (min-width:1131px) {
+@media (min-width:1131px) {
 
     .ejemploMQ {
 
@@ -292,3 +292,28 @@
     }
 
 }
+
+
+/* EJERCICIO ABSOLUTE Y RELATIVE */
+
+.ejercicioAR {
+
+    height: 500px;
+    background-color: blue;
+    position: relative;
+    /* background-image: linear-gradient(to top,red 0%, blue 50%, green 90%); */
+}
+
+.ejercicioAR div {
+
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    bottom:250px;
+    right: 0;
+    -webkit-box-shadow: -26px 42px 55px 127px rgba(0,0,0,0.74);
+    -moz-box-shadow: -26px 42px 55px 127px rgba(0,0,0,0.74);
+    box-shadow: -26px 42px 55px 127px rgba(0,0,0,0.74);
+}
+    
