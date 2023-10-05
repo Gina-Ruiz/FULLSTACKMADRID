@@ -11,13 +11,13 @@ html {
     font-size: 62.5%;
 }
 
+
 body {
     font-size: 16px;
     /* background-color: var(--colorPrincipal); */
-    /* font-family: var(--fuentePrincipal) */
-    font-family: 'Open Sans', sans-serif;
-    /* background-color: red; */
+    font-family: var(--fuentePrincipal);
 
+    /* background-color: red; */
 
 }
 
@@ -170,20 +170,30 @@ SELECCION DE ID */
 
 
 /* formato pc */
+
+
 @media (min-width:1140px) {
     .contenedor {
         max-width: 88%;
-
-        /* margin-top:0 ;
-    margin-right:auto ;
+        /* margin-top:0;
+    margin-right: auto;
     margin-bottom: 0;
-    margin-left:auto ; */
+    margin-left: auto; */
+        /* margin: 0 auto 0 auto; */
+        margin: 0 auto;
+    }
+}
 
-        /* optimizacion */
+@media (max-width:1140px) and (min-width:768px) {
+    .contenedor {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
 
-
-        /* margin:0 auto 0 auto 0; */
-
+@media (max-width:768px) {
+    .contenedor {
+        max-width: 90%;
         margin: 0 auto;
     }
 }
@@ -212,8 +222,7 @@ SELECCION DE ID */
 
 /* ESTILOS PARA EL MAIN  */
 
-.imagenDeFondo {
-
+.fondoMain {
     background-image: url(../img/11641893944_banner_zona_centro.png);
     background-size: cover;
     background-position: top left;
@@ -226,8 +235,10 @@ SELECCION DE ID */
 }
 
 
+
 @media (max-width:1140px) {
-    .marginDerecho {
+    .margenDerecho {
+
         margin-right: 0;
 
     }
@@ -236,49 +247,37 @@ SELECCION DE ID */
 
 
 h1 {
-    color: #fff;
-    background: #f86666a6;
-    font-weight: 800;
-    padding: 30px;
-    margin-bottom: 10px;
-    font-size: 4.7rem;
+    background-color: rgba(248, 102, 102, 0.65);
     font-family: var(--fuentePrincipal);
-
-
+    font-weight: 800;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    padding: 35px;
+    color: white;
+    /* box-shadow: 51px 33px 76px -15px rgba(0,0,0,0.9); */
 }
 
-/* ESTOS SON MODIFICADORES
+/* h1::before{
+    content: "Texto con pseudoelemento";
+} */
 
-h1::after{
-
-content: "texto con pseudoelemento";
-
-}
-
-h1::before{
-content: "texto con pseudoelemento"; */
-
-/* } */
-
-
-
-.imagenDeFondo a {
-
+.fondoMain a {
     background-color: black;
-    color: #fff;
+    color: white;
     border: 2px solid black;
     padding: 24px 94px;
-    text-transform: uppercase;
     text-decoration: none;
-    font-family: var(--fuenteBotton);
+    text-transform: uppercase;
+    font-family: var(--fuenteBotones);
     font-weight: 700;
     font-size: 1.4rem;
 }
 
 
 
+
 @media (max-width:768px) {
-    .imagenDeFondo a {
+    .fondoMain a {
         padding: 24px 70px;
     }
 }
@@ -288,7 +287,9 @@ content: "texto con pseudoelemento"; */
 .flexMain {
     display: flex;
     flex-direction: row;
+    /*POR DEFECTO ES ROW*/
     justify-content: space-between;
+
 }
 
 .flexMain img {
@@ -297,10 +298,13 @@ content: "texto con pseudoelemento"; */
 
 }
 
+
 /* ESTILOS PARA LA IMAGEN DE CORPORACIONES  */
 
+
 .logos {
-    background-color: #fff;
+
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -312,43 +316,39 @@ content: "texto con pseudoelemento"; */
 }
 
 @media (max-width:1140px) and (min-width:768px) {
-    .logos {
-        padding: 20px 40px;
-    }
-
-    [src="img/Logos-oficiales.png"] {
-
+    [src="./img/Logos-oficiales.png"] {
         max-width: 70%;
+        /* margin: 0px 40px; */
     }
 
-    [ src="img/Logo-Adecco.png"] {
-
+    [src="./img/Logo-Adecco.png"] {
         max-width: 30%;
-
+        /* margin: 0px 40px; */
     }
 
 }
 
 @media (max-width:768px) {
+
     .logos {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-
     }
 
     .logos img {
 
         max-width: 90%;
-        margin: 20px;
+        padding: 20px;
 
     }
 
 }
 
 
+
 /* ESTILOS SECCION CURSOS  */
+
 
 .seccionCursos h3 {
 
@@ -374,26 +374,30 @@ content: "texto con pseudoelemento"; */
 
 }
 
-.botonesCurso {
+
+.botonesCursos {
 
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-transform: uppercase;
+
     margin-bottom: 105px;
 
 }
 
+
+
 .botonVerTodo {
 
     background-color: var(--colorPrincipal);
-    color: #fff;
+    color: white;
     font-family: var(--fuentePrincipal);
     font-size: 1.4rem;
     padding: 12px 24px;
-    text-decoration: none;
+
     text-transform: uppercase;
-    font-weight: 800;
+    text-decoration: none;
+    font-weight: 600;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     border: 1px solid var(--colorPrincipal);
@@ -404,12 +408,13 @@ content: "texto con pseudoelemento"; */
 .botonMadrid {
 
     background-color: white;
-    color: black;
+    color: var(--colorSecundario);
     font-family: var(--fuentePrincipal);
     font-size: 1.4rem;
     padding: 12px 24px;
-    text-decoration: none;
+
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 600;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
@@ -439,16 +444,18 @@ content: "texto con pseudoelemento"; */
 }
 
 
+
 .cursosOfertados>div {
 
 
-    flex: 2;
+
     max-width: 50%;
+    flex: 2;
     padding: 40px 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 300px;
+    min-height: 300px;
 }
 
 @media (max-width:1140px) {
@@ -463,18 +470,17 @@ content: "texto con pseudoelemento"; */
 @media (max-width:768px) {
 
     .cursosOfertados>div {
-        margin-left: 0;
+
         margin-right: 0;
-        margin-top: 15px;
+        margin-left: 0;
         margin-bottom: 15px;
+        margin-top: 15px;
         max-width: 100%;
     }
 
 }
 
-
-.Marketing {
-
+.marketing {
     background-image: url(../img/Curso-marketing-digital-centro.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -494,13 +500,12 @@ content: "texto con pseudoelemento"; */
 }
 
 
+.cursosOfertados h2 {
 
-.cursosOfertados div h2 {
-
-    color: #fff;
+    color: white;
     font-size: 2.7rem;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 22px;
 
 }
@@ -509,7 +514,7 @@ content: "texto con pseudoelemento"; */
 
     color: var(--colorPrincipal);
     font-size: 1.4rem;
-    background-color: #fff;
+    background-color: white;
     border: 2px solid white;
     text-decoration: none;
     text-transform: uppercase;
@@ -526,52 +531,43 @@ content: "texto con pseudoelemento"; */
 /* ESTILOS SECCION PIDENOSLO */
 
 
-.seccionPidenoslo {
 
+
+.pidenoslo {
     margin-bottom: 150px;
 
 
 }
 
-
-.seccionPidenoslo h3 {
-
-    color: var(--colorSecundario);
-    font-weight: 800;
-    font-size: 17px;
-    text-transform: uppercase;
+.pidenoslo h3 {
     text-align: center;
-    font-family: var(--fuentePrincipal);
+    color: var(--colorSecundario);
 
-
-}
-
-.seccionPidenoslo a {
-
-    background-color: var(--colorPrincipal);
-    color: #fff;
-    font-weight: 700;
-    float: none;
-    padding: 20px 40px;
-    border-radius: 96px;
-    margin-top: 40px;
-    display: inline-block;
-    text-decoration: none;
     text-transform: uppercase;
-    font-family: var(--fuentePrincipal);
-    margin-bottom: 150px;
-
+    font-weight: 800;
+    margin-bottom: 40px 0;
 }
 
-.seccionPidenoslo div {
-
+.pidenoslo div {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-
-
 }
 
-.seccionPidenoslo a:hover {
+.pidenoslo a {
+    background-color: var(--colorPrincipal);
+    color: white;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.4rem;
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid;
+}
+
+.pidenoslo a:hover {
 
     background-color: var(--colorSecundario);
     text-decoration: underline;
@@ -581,19 +577,23 @@ content: "texto con pseudoelemento"; */
 
 /* ESTILOS SECCION VIDEO */
 
+
 .video {
 
-    display: flex;
+
     justify-content: center;
+    display: flex;
     margin-bottom: 70px;
 
 }
+
 
 
 @media (max-width:1140px) {
     .video iframe {
         width: 100%;
         height: 350px;
+
     }
 
 }
@@ -610,6 +610,7 @@ content: "texto con pseudoelemento"; */
 
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 
+
 .seccionParaQuien {
 
     display: flex;
@@ -618,11 +619,15 @@ content: "texto con pseudoelemento"; */
 }
 
 @media (max-width:1140px) {
+
     .seccionParaQuien {
 
         flex-direction: column;
     }
+
+
 }
+
 
 
 .seccionParaQuien>div {
@@ -634,6 +639,7 @@ content: "texto con pseudoelemento"; */
 }
 
 @media (max-width:1140px) {
+
     .seccionParaQuien>div {
 
         flex: 1;
@@ -648,7 +654,7 @@ content: "texto con pseudoelemento"; */
     font-family: var(--fuentePrincipal);
     font-weight: 600;
     font-size: 1.7rem;
-    text-transform: uppercase;
+
 }
 
 
@@ -656,34 +662,24 @@ content: "texto con pseudoelemento"; */
 
     font-family: var(--fuentePrincipal);
     color: var(--colorSecundario);
-    font-weight: 800;
+
     font-size: 2.7rem;
+    font-weight: 800;
+
     margin-bottom: 22px;
 
 }
 
-
-
-.paraQuienIzquierda {
+.paraQuienIzq {
 
     margin-right: 15px;
-
 }
-
-
-.paraQuienDerecha {
-
-    margin-right: 15px;
-
-
-}
-
 
 .seccionParaQuien p {
 
     font-family: var(--fuentePrincipal);
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 200;
     margin-bottom: 25px;
     line-height: 1.5;
     color: var(--colorSecundario);
@@ -693,31 +689,29 @@ content: "texto con pseudoelemento"; */
 
 
 .seccionParaQuien span {
+
     font-weight: 800;
 
 }
 
-.paraQuienIzquierda h4 {
-
-    color: var(--colorSecundario);
+.paraQuienIzq h4 {
     font-family: var(--fuentePrincipal);
+    color: var(--colorSecundario);
     font-weight: 800;
-    font-size: 1.45em;
+    font-size: 1.5rem;
     line-height: 1.8;
 }
 
-.paraQuienIzquierda a {
-
+.paraQuienIzq a {
     color: var(--colorPrincipal);
     text-transform: uppercase;
     font-family: var(--fuentePrincipal);
     font-size: 1.4rem;
-    margin-bottom: 50px;
+
     font-weight: 700;
 }
 
-.paraQuienIzquierda h5 {
-
+.paraQuienIzq h5 {
     font-family: var(--fuentePrincipal);
     font-weight: 800;
     font-size: 1.4rem;
@@ -727,57 +721,52 @@ content: "texto con pseudoelemento"; */
 
 }
 
-.paraQuienIzquierda .botonInfografia {
+.paraQuienIzq .botonInfografia {
     background-color: var(--colorPrincipal);
-    color: #fff;
+    color: white;
     text-decoration: none;
     padding: 20px 40px;
     display: inline-block;
+
 }
 
-
-.paraQuienDerecha {
-
+.paraQuienDer {
     display: flex;
     flex-direction: column;
     margin-left: 45px;
     margin-top: 60px;
 }
 
-.paraQuienDerechaSup {
-
+.paraQuienDerSup {
     background-color: var(--colorPrincipal);
     padding: 60px 30px;
 
 
 }
 
-.paraQuienDerechaSup h5 {
-
+.paraQuienDerSup h5 {
     font-family: var(--fuentePrincipal);
     font-size: 2.5rem;
-    color: white;
+
     font-weight: 800;
     margin-top: 0;
-    margin-bottom: 10;
-
+    margin-bottom: 10px;
+    color: white;
 }
 
-.paraQuienDerechaSup .destacarAzul {
-
+.paraQuienDerSup .destacarAzul {
     color: var(--colorSecundario);
 
 
 }
 
-.paraQuienDerechaSup span {
+.paraQuienDerSup span {
 
     color: black;
 
 }
 
-.paraQuienDerechaInf {
-
+.paraQuienDerInf {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -787,28 +776,24 @@ content: "texto con pseudoelemento"; */
 
 }
 
-.paraQuienDerechaInf img {
-
+.paraQuienDerInf img {
     margin-top: 10px;
     height: 40px;
     width: 40px;
 
 }
 
-.paraQuienDerechaInf h4 {
-
-
+.paraQuienDerInf h4 {
+    font-family: var(--fuentePrincipal);
     background-color: black;
     color: white;
     text-transform: uppercase;
-    font-family: var(--fuentePrincipal);
-    padding: 30px;
-    width: 250px;
+    padding: 40px 30px;
     text-align: left;
+    width: 250px;
 }
 
-.paraQuienDerechaInf span {
-
+.paraQuienDerInf h4 span {
     color: var(--colorPrincipal);
 
 }
@@ -817,33 +802,39 @@ content: "texto con pseudoelemento"; */
 
 /* ESTILOS LOCALIZACIONES */
 
-.localizaciones {
-
+.cajas-localizaciones {
     background-color: black;
-    color: #fff;
+
     padding: 100px 0;
-    text-transform: uppercase;
+
 
 }
 
-.localizaciones .contenedor {
+/* .cajas-localizaciones .contenedor {
 
-    display: flex;
+    /* display: flex; */
 
-}
+/* 
+} */
 
-.localizaciones .contenedor div {
-
-    width: 25%;
-    padding: 25px 0px;
+.cajas-localizaciones .contenedor div {
+    /* width: 25%; */
+    padding: 24px 0px;
     color: white;
     margin: 0;
 
 }
 
+.cajas-localizaciones .contenedor {
+
+    display: grid;
+    grid: 1fr/repeat(4,1fr); /* repite 4 veces la fraccion 1fr */
+
+}
+
 @media (max-width:1140px) {
 
-    .localizaciones .contenedor div {
+    .cajas-localizaciones .contenedor div {
 
         width: 50%;
 
@@ -856,25 +847,30 @@ content: "texto con pseudoelemento"; */
 
 @media (max-width:768px) {
 
-    .localizaciones .contenedor {
+    .cajas-localizaciones .contenedor {
         flex-wrap: wrap;
     }
 
-    .localizaciones .contenedor div {
-
+    .cajas-localizaciones .contenedor div {
         width: 100%;
 
 
     }
+
 }
 
-.localizaciones h2 {
 
-    color: #fff;
+
+
+.cajas-localizaciones h2 {
+    color: white;
     font-size: 27px;
     font-weight: 700px;
-    font-family: var(--fuenteBotton);
+    font-family: var(--fuenteBotones);
     margin-bottom: 40px;
+    text-transform: uppercase;
+
+
 }
 
 
@@ -882,21 +878,17 @@ content: "texto con pseudoelemento"; */
 /* ESTILOS CONTACTAR */
 
 
-
-.contactar {
+.Contacto {
 
     background-color: var(--colorPrincipal);
-    color: #fff;
-    text-transform: uppercase;
+
     padding-top: 90px;
     padding-bottom: 130px;
 
 }
 
-.contactar .contenedor>h3 {
-
-
-    color: #fff;
+.Contacto .contenedor>h3 {
+    color: white;
     font-size: 17px;
     margin-bottom: 22px;
     font-weight: 300;
@@ -906,36 +898,33 @@ content: "texto con pseudoelemento"; */
 
 }
 
-.contactar .contenedor>h2 {
-
-
-    color: #fff;
+.Contacto .contenedor>h2 {
+    color: white;
     margin-bottom: 22px;
-    font-weight: 800;
-    font-family: var(--fuentePrincipal);
+
     text-transform: uppercase;
-
-
-
+    font-weight: 800;
 }
 
-.contactos {
+.ContactoCuadros {
     display: flex;
     flex-direction: row;
 }
 
-.contactos img {
+
+
+
+.ContactoCuadros img {
     margin-right: 15px;
 }
 
 
-.contacto1 {
-
-    color: #02052f;
+.cuadro1 {
+    display: flex;
     background-color: white;
     margin-right: 15px;
     border-radius: 0.55rem;
-    display: flex;
+
     flex-direction: row;
     justify-content: flex-start;
     flex: 1;
@@ -944,11 +933,9 @@ content: "texto con pseudoelemento"; */
 
 }
 
-.contacto2 {
-
-    color: #02052f;
+.cuadro2 {
     background-color: white;
-    margin-right: 15px;
+    margin-left: 15px;
     border-radius: 0.55rem;
     display: flex;
     flex-direction: row;
@@ -956,15 +943,40 @@ content: "texto con pseudoelemento"; */
     flex: 1;
     max-width: 50%;
     padding: 20px;
+}
+
+
+@media (max-width:1140px) {
+    .ContactoCuadros {
+        flex-direction: column;
+    }
+
+    .cuadro1,
+    .cuadro2 {
+        max-width: 100%;
+        margin: 10px 0px;
+    }
+
+    .ContactoCuadros img {
+        height: 60px;
+    }
 
 }
+
+
+
+
+
+
+
+
 
 /* ESTILOS FOOTER */
 
 .seccionFooter {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    margin-bottom: 40px;
 
 }
 
@@ -1003,13 +1015,19 @@ content: "texto con pseudoelemento"; */
     font-family: var(--fuentePrincipal);
     color: var(--colorSecundario);
     font-size: 1.7rem;
-    font-weight: 800;
+
     margin-right: 80px;
     line-height: 1.2;
 
 }
 
+
+
+
 /* ESTILOS HEADER  */
+
+
+
 .seccionHeader {
     display: flex;
     flex-direction: row;
@@ -1019,11 +1037,32 @@ content: "texto con pseudoelemento"; */
 }
 
 
-.seccionEnlaces {
+.seccionImagen {
+    display: flex;
+    max-width: 45%;
+    flex-direction: column;
+    justify-content: end;
+}
 
+.seccionEnlaces {
+    max-width: 55%;
     display: flex;
     flex-direction: column;
 }
+
+
+@media (max-width:768px) {
+    .seccionHeader {
+        flex-direction: column;
+    }
+
+    .seccionImagen,
+    .seccionEnlaces {
+        max-width: 100%;
+        align-items: center;
+    }
+}
+
 
 .seccionLogin {
 
@@ -1060,6 +1099,7 @@ content: "texto con pseudoelemento"; */
     display: inline-block;
 }
 
+
 .seccionNav a:hover {
     text-decoration: underline;
 }
@@ -1076,8 +1116,8 @@ content: "texto con pseudoelemento"; */
     text-decoration: none !important;
 }
 
-.seccionImagen {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+
+
+.seccionImagen img {
+    max-width: 100%;
 }
