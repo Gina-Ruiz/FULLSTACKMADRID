@@ -21,7 +21,7 @@ let camiseta = "red",
 zapatos = "negros";
 
 console.log("CAMISETA:", camiseta);  
-console.log("PANTALON:", pantalon);
+console.log("PANTALON:", pantalon);   //EL CONSULE LOG IMPRIME EN PANTALLA LO QUE ESTOY MENCIONANDO 
 console.log("ZAPATOS:", zapatos);
 
 
