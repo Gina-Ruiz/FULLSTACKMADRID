@@ -212,3 +212,6 @@ console.log("Nombre: " + nombre + " email:" + email);
 console.log("NOMBRE Y EMAIL CONCATENADOS:" + nombre + " " + email);
 console.log(`NOMBRE Y EMAIL CONCATENADOS: ${nombre} ${email}`);
 
+//BOOLEAN
+
+
