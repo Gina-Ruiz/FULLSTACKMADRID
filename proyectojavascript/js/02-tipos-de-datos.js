@@ -189,7 +189,7 @@ console.log("MOSTRAR EN PANTALLA EL TOTAL A PAGAR CON DESCUENTO", total);
 //INCREMENTO/DECREMENTO
 
 let meGusta = 0;
-meGusta += 15;    //incremente en 1 el valor de meGusta
+meGusta += 15;    //incremente en 15 el valor de meGusta
 meGusta -= 6;
 
 //meGusta=meGusta+1;
@@ -198,6 +198,25 @@ meGusta -= 6;
 console.log("NUMERO DE ME GUSTAS", meGusta);
 // console.log("NUMERO DE ME GUSTAS2", meGusta++);
 
+/* var cantidadMg = 0;
+var mensaje = "";
+
+cantidadMg++; // 1
+
+mensaje = "Tienes "+cantidadMg+" Me gusta :)"; // Tienes 1 Me gusta :)
+
+cantidadMg++; // 2 
+
+console.log(mensaje); // Tienes 1 Me gusta :)
+
+
+console.log(mensaje+cantidadMg) // Tienes 1 Me gusta :)2
+
+
+mensaje = "Tienes "+cantidadMg+" Me gusta :)"; // Tienes 2 Me gusta :)
+
+
+cantidadMg = cantidadMg + 20; // 22 */
 
 
 const nombre = "gin"
