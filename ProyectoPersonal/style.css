@@ -1,57 +1,125 @@
-/* Resetear estilos predeterminados del navegador */
-body, h1, h2, h3, p, a {
+:root {
+    --colorPincipal: #9932cc;
+    --colorSecundario: #dda0dd;
+    --tamañoTexto: 1.5rem;
+    --colorTextosecundario: white;
+
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
-/* Estilos para el encabezado */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+html {
+
+    font-size: 62, 5%;
 }
 
-header a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+
+/* CONTENEDOR */
+
+.contenedor {
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+
 }
 
-/* Estilos para la sección de categorías */
-.categorias {
+/* SECCION HEADER */
+
+.navegacion {
+
+    background-color: var(--colorPincipal);
+    border-radius: 2%;
+
+}
+
+.enlaces {
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #f0f0f0;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+ 
+
+
 }
 
-.categorias div {
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+/* SECCION MAIN/BANER */
+
+.main {
+    background-color: var(--colorSecundario);
 }
 
-/* Estilos para el pie de página */
-footer {
-    background-color: #333;
-    color: #fff;
+
+
+/* SECCION CATEGORIAS */
+
+
+
+
+
+/* <!-- SECCION DE VIDEOS/REVIEWS --> */
+
+
+
+
+/* <!-- SECCION NOTICIAS --> */
+
+
+
+
+/* <!-- SECCION LINKS DE CAPS COMPLETOS O PLATAFORMA  --> */
+
+
+
+
+/* <!-- SECCION DE EVENTOS (PODRIA ENTAR EN NOTICIAS) --> */
+
+
+
+
+
+
+/* <!-- SECCION FOOTER --> */
+
+.info {
+
+    color: var(--colorTextosecundario);
+    background-color: var(--colorPincipal);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    padding: 1rem;
     text-align: center;
-    padding: 20px 0;
+    border-radius: 2%;
+    margin-bottom: 1rem;
 }
 
-footer p {
-    font-weight: bold;
-    margin-bottom: 10px;
+
+
+.info .contacto {
+
+    width: 50vw;
+
+
 }
 
-footer a {
-    color: #fff;
+
+
+.info .redesSociales {
+
+    width: 50vw;
+
+
+}
+
+.info a {
+
+    margin: 3rem;
     text-decoration: none;
-    margin: 0 10px;
 }
