@@ -34,7 +34,9 @@ html {
 
     background-color: var(--colorPincipal);
     border-radius: 2%;
-
+    padding: 1rem;
+    font-size: var(--tamañoTexto);
+  
 }
 
 .enlaces {
@@ -43,10 +45,14 @@ html {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
- 
-
 
 }
+
+
+
+
+
+
 
 /* SECCION MAIN/BANER */
 
@@ -57,6 +63,60 @@ html {
 
 
 /* SECCION CATEGORIAS */
+.clasicos img {
+
+    width: 15%;
+    height: auto;
+
+}
+
+.romance img {
+
+    width: 15%;
+    height: auto;
+
+}
+
+.accion img {
+
+    width: 15%;
+    height: auto;
+
+}
+
+.terror img {
+
+    width: 15%;
+    height: auto;
+
+}
+
+
+.comedia img {
+
+    width: 15%;
+    height: auto;
+
+}
+.peliculas img {
+
+    width: 15%;
+    height: auto;
+
+}
+.psicologico img {
+
+    width: 15%;
+    height: auto;
+
+}
+
+.deportes img {
+
+    width: 15%;
+    height: auto;
+
+}
 
 
 
@@ -102,11 +162,10 @@ html {
 
 
 
-.info .contacto {
+.info .contacto a {
 
     width: 50vw;
-
-
+    
 }
 
 
