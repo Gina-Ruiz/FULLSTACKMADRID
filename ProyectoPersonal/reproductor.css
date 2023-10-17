@@ -36,7 +36,7 @@ html {
     border-radius: 2%;
     padding: 1rem;
     font-size: var(--tamañoTexto);
-
+  
 }
 
 .enlaces {
@@ -98,14 +98,12 @@ html {
     height: auto;
 
 }
-
 .peliculas img {
 
     width: 15%;
     height: auto;
 
 }
-
 .psicologico img {
 
     width: 15%;
@@ -167,7 +165,7 @@ html {
 .info .contacto a {
 
     width: 50vw;
-
+    
 }
 
 
@@ -189,3 +187,4 @@ html {
 
     width: 50vw;
 }
+
