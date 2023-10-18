@@ -489,3 +489,5 @@ console.log(flecha3("hola como estas", "hasta luego"));
 let flecha4 = (quitar) => quitar.pop();
 let elemento=[1,2,3,4,5];
 console.log(flecha4(elemento))
+
+console.log(elemento)
