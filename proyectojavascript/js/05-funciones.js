@@ -423,5 +423,69 @@ sumaExpresion(7, 2, 7)
 //EJERCICIO 2
 //CREAR UNA FUNCION QUE BUSQUE ELEMENTOS DE UN ARRAY NUMEROS. PONERLA CON EXPRESION, DECLARACION Y COMO  FUNCION FLECHA
 
+// number[1,2,3,4];
 
-// let numeros = function[1,2,3
+//   let buscaDeclaracion =function (a,b) {
+// return a.includes(b)
+
+// };
+// console.log(buscaDeclaracion(number,4));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//FUNCION DE FLECHA
+
+
+//CREAR UNA FUNCION DE FLECHA QUE DADOS 2 PARAMETROS ME DE 10 VECES LA SUMA DE AMBOS 
+
+
+
+let flecha = (a, b) => (a + b) * 10;
+
+console.log(flecha(1, 2))
+
+
+// let aprendiendo = numero => numero + 7;
+
+// let resultado = aprendiendo(7);
+// console.log(resultado)
+
+
+
+
+let flecha2 = (texto1, texto2) => (texto1.length) + (texto2.length);
+console.log(flecha2("hola", "adios"))
+
+
+function flecha3(texto1, texto2) {
+    return texto1.length + texto2.length;
+}
+
+console.log(flecha3("hola como estas", "hasta luego"));
+
+
+//EJERCICIO
+//CREAR UNA FUNCION DE FLECHA QUE QUITE EL ULTIMO ELEMENTO DEL FINAL DE UN ARRAY NUEVO QUE CREEMOS CADA VEZ QUE LO CREAMOS
+
+
+let flecha4 = (quitar) => quitar.pop();
+let elemento=[1,2,3,4,5];
+console.log(flecha4(elemento))
