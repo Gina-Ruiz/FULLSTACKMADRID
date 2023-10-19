@@ -65,127 +65,202 @@ html {
 /* SECCION CATEGORIAS */
 .clasicos img {
 
-    width: 15%;
-    height: auto;
-
-}
-
-.romance img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-.accion img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-.terror img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-
-.comedia img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-.peliculas img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-.psicologico img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-.deportes img {
-
-    width: 15%;
-    height: auto;
+    width: 100%;
+    height: 100%;
 
 }
 
 
 
-
-
-/* <!-- SECCION DE VIDEOS/REVIEWS --> */
-
-
-
-
-/* <!-- SECCION NOTICIAS --> */
-
-
-
-
-/* <!-- SECCION LINKS DE CAPS COMPLETOS O PLATAFORMA  --> */
-
-
-
-
-/* <!-- SECCION DE EVENTOS (PODRIA ENTAR EN NOTICIAS) --> */
-
-
-
-
-
-
-/* <!-- SECCION FOOTER --> */
-
-.info {
-
-    color: var(--colorTextosecundario);
-    background-color: var(--colorPincipal);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-transform: uppercase;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 2%;
-    margin-bottom: 1rem;
+.gridClasicos {
+    border: 0.5rem solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
 }
 
 
 
-.info .contacto a {
+    .romance img {
 
-    width: 50vw;
+        width: 100%;
+        height: 100%;
+
+    }
+    
+    .gridRomance {
+        border: 0.5rem solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+    
+
+    .accion img {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .gridAccion {
+        border: 0.5rem solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+
+    .terror img {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .gridTerror {
+        border: 0.5rem solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+
+    .comedia img {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .gridComedia {
+        border: 0.5rem solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+
+    .peliculas img {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .gridPeliculas {
+        border: 0.1rem solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+
+    .psicologico img {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .gridPsicologico {
+        border: 0.5rem solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+
+    .deportes img {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .gridDeportes{
+        border: 0.5rem solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+    }
+
+
+
+    /* <!-- SECCION DE VIDEOS/REVIEWS --> */
+
+
+
+
+    /* <!-- SECCION NOTICIAS --> */
+
+.noticias {
 
 }
 
 
 
-.info .aCercaDeMi {
+.gridNoticias{
 
-    width: 50vw;
-
-
+    border: 0.5rem solid black;
+    display: grid;
+    grid-template-columns: 1fr  1fr ;
+    grid-template-rows: 1fr ;
+    
 }
 
-.info a {
 
-    margin: 3rem;
-    text-decoration: none;
-}
 
-.info .preguntasFrecuentes {
 
-    width: 50vw;
-}
+
+
+    /* <!-- SECCION LINKS DE CAPS COMPLETOS O PLATAFORMA  --> */
+
+
+
+
+    /* <!-- SECCION DE EVENTOS (PODRIA ENTAR EN NOTICIAS) --> */
+
+
+
+
+
+
+    /* <!-- SECCION FOOTER --> */
+
+    .info {
+
+        color: var(--colorTextosecundario);
+        background-color: var(--colorPincipal);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-transform: uppercase;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 2%;
+        margin-bottom: 1rem;
+    }
+
+
+
+    .info .contacto a {
+
+        width: 50vw;
+
+    }
+
+
+
+    .info .aCercaDeMi {
+
+        width: 50vw;
+
+
+    }
+
+    .info a {
+
+        margin: 3rem;
+        text-decoration: none;
+    }
+
+    .info .preguntasFrecuentes {
+
+        width: 50vw;
+    }
