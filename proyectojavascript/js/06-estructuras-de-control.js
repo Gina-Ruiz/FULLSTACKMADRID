@@ -148,8 +148,8 @@ multiplo(10)
 // = 15
 // = 100
 
-let numeroMas10 = parseInt(prompt("escribe tu numero aqui"));
-
+// let numeroMas10 = parseInt(prompt("escribe tu numero aqui"));
+let numeroMas10 = 10;
 switch (numeroMas10 + 10) {
     case 9: console.log("es 9");
         break;
@@ -215,7 +215,7 @@ for (let i = 1; i <= 20; i += 2) {
 
 let arrayNumero = [1, 22, 23, 4, 5, 6, 7, 8, 9];
 
-for (let i = 0; i< arrayNumero.length; i++) {
+for (let i = 0; i < arrayNumero.length; i++) {
 
     console.log(arrayNumero[i])
 }
@@ -241,8 +241,112 @@ let carrito = [
     }
 ];
 
+for (let i = 0; i < carrito.length; i++) {
+    console.log(carrito[i]);
+    console.log(carrito[i].nombre);
+}
 
-for  (let i = 0 ; i=carrito.length; i++){
+//WHILE
 
+let i = 0;
+//el indice va fuera 
+//condicion si va dentro 
+
+while (i < 100) {
+    console.log(i);
+    i++; //actualizador 
+}
+
+//DO WHILE 
+
+let j = 20;
+
+do {
+    console.log(j);
+    j++;
+
+} while (j < 10)
+
+//EJECUTA EL CODIGO AL MENOS UNA VEZ 
+
+
+
+let a = 1;
+while (a <= 20) {
+    if (a % 2 === 0) {
+    } console.log(a + 1)
+    a += 2
 
 }
+
+//CREAR UNA FUNCION QUE DADO UN ARGUMENTO ME DIGA SI 
+//ES POSITIVO
+//ES NEGATIVO
+//ES 0
+
+
+// for (let i = 1; i <= 20; i += 2) {
+//     if (i % 2 === 0) {
+
+//     }
+//     console.log(i + 1)
+// }
+
+let num;
+
+function ejercicio9(num) {
+    if (num > 0) {
+        console.log("es positivo")
+    } else if (num < 0) {
+        console.log("es negativo")
+    } else {
+        console.log("es 0")
+    }
+}
+ejercicio9(7);
+
+
+//CREAR UNA FUNCION QUE DADO ARGUMENTO, (NUMERO ENTERO) ME DE UNA CUENTA ATRAS DE LOS NUMEROS
+
+
+
+
+
+function cuentaAtras(numE) {
+
+    for (let i = numE; i >= 0; i--) {
+        console.log(i)
+    }
+}
+cuentaAtras(6);
+
+
+//CREAR UNAS FUNCION QUE DADO ARGUMENTO DE ENTRADA N, ME DE LA SUMA DE TODOS LOS NUMEROS ENTRE 0 Y N
+let totalA = 0;
+function acumulacion(x) {
+    for (let i = 0; i <= x; i++) {
+        totalA = totalA + i;
+
+    }
+    console.log(totalA);
+
+}
+acumulacion(6);
+
+
+//FUNCION QUE DADO UN ARGUMENTO, ME CALCULE LA MEDIA DE LA SUMA DE TODOS LOS VALORES 
+//USAR WHILE
+
+ let m = 0;
+function calcular(z) {
+   
+
+    while (m <= x) {
+        totalCalculo +=  m
+         m++; 
+           
+    }
+console.log(totalCalculo/z+1);
+        
+}
+calcular (6)
