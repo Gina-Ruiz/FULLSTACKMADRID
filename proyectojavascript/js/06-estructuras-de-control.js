@@ -139,14 +139,14 @@ function multiplo(num) {
 multiplo(10)
 
 
-    //EJERCICIO4
-    //CREAR UNA ESTRUCTURA DE CONTROL CON SWITCH QUE ME COMPARE SI  UN NUMERO +10 ES 
-    //COGER LA INFO DESDE EL PROMPT
+//EJERCICIO4
+//CREAR UNA ESTRUCTURA DE CONTROL CON SWITCH QUE ME COMPARE SI  UN NUMERO +10 ES 
+//COGER LA INFO DESDE EL PROMPT
 
-    // = 9
-    // = 12
-    // = 15
-    // = 100
+// = 9
+// = 12
+// = 15
+// = 100
 
 let numeroMas10 = parseInt(prompt("escribe tu numero aqui"));
 
@@ -161,5 +161,88 @@ switch (numeroMas10 + 10) {
         break;
     default: console.log("no existe");
         break;
+
+}
+
+
+//LOOPS (BUCLES)
+
+//indice===i
+for (let i = 0; i <= 3; i++) {
+
+    console.log(i)
+}
+//i++   i=i+1
+//i++   i=i+2
+
+
+//MOSTRAR POR PANTALLA DEL NUMERO AL 200
+
+
+for (let i = 100; i <= 200; i++) {
+
+    console.log(i)
+}
+
+//MOSTRAR LOS NUMEROS DEL 2 AL 49 PERO SOLO LOS PARES 
+
+for (let i = 100; i <= 200; i += 2) {
+    console.log(i)
+
+}
+
+
+//MOSTRAR DEL NUMERO 100 AL CERO Y QUE VAYA DE 5 EN 5
+
+for (let i = 100; i >= 0; i -= 5) {
+    console.log(i)
+
+
+}
+
+//MOSTRAR DEL 1 AL 20 TODOS LOS NUMEROS PARES INCLUIDOS AMBOS 
+//NOTA: I%2===0 ME DA LA CONDICION DE PAR
+
+
+
+for (let i = 1; i <= 20; i += 2) {
+    if (i % 2 === 0) {
+
+    }
+    console.log(i + 1)
+}
+
+
+let arrayNumero = [1, 22, 23, 4, 5, 6, 7, 8, 9];
+
+for (let i = 0; i< arrayNumero.length; i++) {
+
+    console.log(arrayNumero[i])
+}
+
+
+
+let carrito = [
+    {
+        nombre: "TV",
+        precio: 750
+    },
+    {
+        nombre: "Tablet",
+        precio: 350
+    },
+    {
+        nombre: "Movil",
+        precio: 550
+    },
+    {
+        nombre: "PC",
+        precio: 1750
+    }
+];
+
+
+for  (let i = 0 ; i=carrito.length; i++){
+
 
 }
