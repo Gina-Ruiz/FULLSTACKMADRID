@@ -13,10 +13,15 @@
 }
 
 html {
-
+    background-color: black;
     font-size: 62, 5%;
+    font-family: 'Playpen Sans', cursive;
+    
 }
 
+a {
+    text-decoration: none;
+}
 
 /* CONTENEDOR */
 
@@ -24,7 +29,7 @@ html {
 
     margin-left: 5rem;
     margin-right: 5rem;
-
+    color: white;
 
 }
 
@@ -33,7 +38,7 @@ html {
 .navegacion {
 
     background-color: var(--colorPincipal);
-    border-radius: 2%;
+    border-radius: 1rem;
     padding: 1rem;
     font-size: var(--tamañoTexto);
 
@@ -44,8 +49,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    list-style: none;
-
+    text-decoration: none;
 }
 
 
@@ -76,118 +80,118 @@ html {
     border: 0.5rem solid black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
 }
 
 
 
-    .romance img {
+.romance img {
 
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    height: 100%;
 
-    }
-    
-    .gridRomance {
-        border: 0.5rem solid black;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
-    }
-    
+}
 
-    .accion img {
-
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .gridAccion {
-        border: 0.5rem solid black;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
-    }
-
-    .terror img {
-
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .gridTerror {
-        border: 0.5rem solid black;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
-    }
-
-    .comedia img {
-
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .gridComedia {
-        border: 0.5rem solid black;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
-    }
-
-    .peliculas img {
-
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .gridPeliculas {
-        border: 0.1rem solid black;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
-    }
-
-    .psicologico img {
-
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .gridPsicologico {
-        border: 0.5rem solid black;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
-    }
-
-    .deportes img {
-
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .gridDeportes{
-        border: 0.5rem solid black;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
-    }
+.gridRomance {
+    border: 0.5rem solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
 
 
+.accion img {
 
-    /* <!-- SECCION DE VIDEOS/REVIEWS --> */
+    width: 100%;
+    height: 100%;
+
+}
+
+.gridAccion {
+    border: 0.5rem solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.terror img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.gridTerror {
+    border: 0.5rem solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.comedia img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.gridComedia {
+    border: 0.5rem solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.peliculas img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.gridPeliculas {
+    border: 0.1rem solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.psicologico img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.gridPsicologico {
+    border: 0.5rem solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.deportes img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.gridDeportes {
+    border: 0.5rem solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
 
 
 
+/* <!-- SECCION DE VIDEOS/REVIEWS --> */
 
-    /* <!-- SECCION NOTICIAS --> */
+
+
+
+/* <!-- SECCION NOTICIAS --> */
 
 /* .noticias {
 
@@ -195,13 +199,13 @@ html {
 
 
 
-.gridNoticias{
+.gridNoticias {
 
     border: 0.5rem solid black;
     display: grid;
-    grid-template-columns: 1fr  1fr ;
-    grid-template-rows: 1fr ;
-    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
 }
 
 
@@ -209,58 +213,58 @@ html {
 
 
 
-    /* <!-- SECCION LINKS DE CAPS COMPLETOS O PLATAFORMA  --> */
+/* <!-- SECCION LINKS DE CAPS COMPLETOS O PLATAFORMA  --> */
 
 
 
 
-    /* <!-- SECCION DE EVENTOS (PODRIA ENTAR EN NOTICIAS) --> */
+/* <!-- SECCION DE EVENTOS (PODRIA ENTAR EN NOTICIAS) --> */
 
 
 
 
 
 
-    /* <!-- SECCION FOOTER --> */
+/* <!-- SECCION FOOTER --> */
 
-    .info {
+.info {
 
-        color: var(--colorTextosecundario);
-        background-color: var(--colorPincipal);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        text-transform: uppercase;
-        padding: 1rem;
-        text-align: center;
-        border-radius: 2%;
-        margin-bottom: 1rem;
-    }
-
-
-
-    .info .contacto a {
-
-        width: 50vw;
-
-    }
+    color: var(--colorTextosecundario);
+    background-color: var(--colorPincipal);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2%;
+    margin-bottom: 1rem;
+}
 
 
 
-    .info .aCercaDeMi {
+.info .contacto a {
 
-        width: 50vw;
+    width: 50vw;
+
+}
 
 
-    }
 
-    .info a {
+.info .aCercaDeMi {
 
-        margin: 3rem;
-        text-decoration: none;
-    }
+    width: 50vw;
 
-    .info .preguntasFrecuentes {
 
-        width: 50vw;
-    }
+}
+
+.info a {
+
+    margin: 3rem;
+    text-decoration: none;
+}
+
+.info .preguntasFrecuentes {
+
+    width: 50vw;
+}
