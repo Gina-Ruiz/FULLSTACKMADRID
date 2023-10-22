@@ -1,7 +1,7 @@
 :root {
     --colorPincipal: #9932cc;
-    --colorSecundario: #dda0dd;
-    --tamañoTexto: 1.5rem;
+    --colorSecundario: #FBE1FE;
+    --tamañoTexto: 1rem;
     --colorTextosecundario: white;
 
 }
@@ -13,8 +13,11 @@
 }
 
 html {
-
+    background-color: black;
     font-size: 62, 5%;
+    font-family: 'Mulish', sans-serif;
+
+   
 }
 
 
@@ -24,167 +27,14 @@ html {
 
     margin-left: 5rem;
     margin-right: 5rem;
-
+    color: white;
 
 }
-
-/* SECCION HEADER */
 
 .navegacion {
 
     background-color: var(--colorPincipal);
-    border-radius: 2%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     padding: 1rem;
-    font-size: var(--tamañoTexto);
-  
 }
-
-.enlaces {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-
-}
-
-
-
-
-
-
-
-/* SECCION MAIN/BANER */
-
-.main {
-    background-color: var(--colorSecundario);
-}
-
-
-
-/* SECCION CATEGORIAS */
-.clasicos img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-.romance img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-.accion img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-.terror img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-
-.comedia img {
-
-    width: 15%;
-    height: auto;
-
-}
-.peliculas img {
-
-    width: 15%;
-    height: auto;
-
-}
-.psicologico img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-.deportes img {
-
-    width: 15%;
-    height: auto;
-
-}
-
-
-
-
-
-/* <!-- SECCION DE VIDEOS/REVIEWS --> */
-
-
-
-
-/* <!-- SECCION NOTICIAS --> */
-
-
-
-
-/* <!-- SECCION LINKS DE CAPS COMPLETOS O PLATAFORMA  --> */
-
-
-
-
-/* <!-- SECCION DE EVENTOS (PODRIA ENTAR EN NOTICIAS) --> */
-
-
-
-
-
-
-/* <!-- SECCION FOOTER --> */
-
-.info {
-
-    color: var(--colorTextosecundario);
-    background-color: var(--colorPincipal);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-transform: uppercase;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 2%;
-    margin-bottom: 1rem;
-}
-
-
-
-.info .contacto a {
-
-    width: 50vw;
-    
-}
-
-
-
-.info .aCercaDeMi {
-
-    width: 50vw;
-
-
-}
-
-.info a {
-
-    margin: 3rem;
-    text-decoration: none;
-}
-
-.info .preguntasFrecuentes {
-
-    width: 50vw;
-}
-
