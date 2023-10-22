@@ -1,7 +1,7 @@
 :root {
     --colorPincipal: #9932cc;
-    --colorSecundario: #dda0dd;
-    --tamañoTexto: 1.5rem;
+    --colorSecundario: #FBE1FE;
+    --tamañoTexto: 1rem;
     --colorTextosecundario: white;
 
 }
@@ -15,8 +15,9 @@
 html {
     background-color: black;
     font-size: 62, 5%;
-    font-family: 'Playpen Sans', cursive;
-    
+    font-family: 'Mulish', sans-serif;
+
+
 }
 
 a {
@@ -33,15 +34,33 @@ a {
 
 }
 
+
+/* SECCION BANER */
+
+
+.baner {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+
+}
+
+
+
 /* SECCION HEADER */
 
 .navegacion {
 
     background-color: var(--colorPincipal);
-    border-radius: 1rem;
+
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     padding: 1rem;
     font-size: var(--tamañoTexto);
-
+    text-transform: capitalize;
 }
 
 .enlaces {
@@ -50,11 +69,31 @@ a {
     flex-direction: row;
     justify-content: space-between;
     text-decoration: none;
+
 }
 
+.enlaces a {
+    color: var(--colorSecundario);
+    font-size: 1.2rem;
+}
 
+.enlaces div {
+    background-color: var(--colorSecundario);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 50rem;
+    padding-right: 0.4rem;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 1rem;
+}
 
-
+.enlaces .b {
+    color: gray;
+    display: flex;
+    justify-content: start;
+    font-size: var(--tamañoTexto);
+}
 
 
 
@@ -67,6 +106,12 @@ a {
 
 
 /* SECCION CATEGORIAS */
+.categorias {
+    text-transform: capitalize;
+    color: var(--colorSecundario);
+}
+
+
 .clasicos img {
 
     width: 100%;
@@ -77,12 +122,16 @@ a {
 
 
 .gridClasicos {
-    border: 0.5rem solid black;
+    padding: 0.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin: 3rem 0;
 }
 
+.gridClasicos div {
+    margin: 0.3rem;
+}
 
 
 .romance img {
@@ -97,6 +146,11 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin: 3rem 0;
+}
+
+.gridRomance div {
+    margin: 0.3rem;
 }
 
 
@@ -112,7 +166,13 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin: 3rem 0;
 }
+
+.gridAccion div {
+    margin: 0.3rem;
+}
+
 
 .terror img {
 
@@ -126,6 +186,11 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin: 3rem 0;
+}
+
+.gridTerror div {
+    margin: 0.3rem;
 }
 
 .comedia img {
@@ -140,6 +205,11 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin: 3rem 0;
+}
+
+.gridComedia div {
+    margin: 0.3rem;
 }
 
 .peliculas img {
@@ -154,6 +224,11 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin: 3rem 0;
+}
+
+.gridPeliculas div {
+    margin: 0.3rem;
 }
 
 .psicologico img {
@@ -168,6 +243,11 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin: 3rem 0;
+}
+
+.gridPsicologico div {
+    margin: 0.3rem;
 }
 
 .deportes img {
@@ -182,8 +262,12 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin: 3rem 0;
 }
 
+.gridDeportes div {
+    margin: 0.3rem;
+}
 
 
 /* <!-- SECCION DE VIDEOS/REVIEWS --> */
@@ -201,12 +285,13 @@ a {
 
 .gridNoticias {
 
-    border: 0.5rem solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-
+    border: 0.1rem solid white;
+   display: flex;
 }
+
+
+
+
 
 
 
@@ -237,7 +322,9 @@ a {
     text-transform: uppercase;
     padding: 1rem;
     text-align: center;
-    border-radius: 2%;
+
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
     margin-bottom: 1rem;
 }
 
