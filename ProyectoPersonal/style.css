@@ -3,6 +3,7 @@
     --colorSecundario: #FBE1FE;
     --tamañoTexto: 1rem;
     --colorTextosecundario: white;
+    --funtePrincipal:'Mulish', sans-serif;
 
 }
 
@@ -80,17 +81,34 @@ a {
     display: flex;
     justify-content: flex-start;
     border-radius: 1rem;
-}
+}*/
 
 .enlaces .buscador  {
     color: gray;
     display: flex;
     justify-content: start;
     font-size: var(--tamañoTexto);
-} */
 
+} 
 
+input{
+    background-color: var(--colorSecundario);
+    padding: 0.3rem;
+    padding-right: 35rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border: 0;
+    outline: none;
+    text-transform: capitalize;
+    font-family: var(--funtePrincipal);
 
+}
+
+button{
+background-color: var(--colorSecundario);
+padding: 0.3rem;
+border: none;
+border-radius:0 1.5rem 1.5rem 0 ;
+}
 
 /* SECCION MAIN/BANER */
 
