@@ -35,6 +35,8 @@ a {
 }
 
 
+
+
 /* SECCION BANER */
 
 
@@ -69,7 +71,7 @@ a {
     font-size: 1.2rem;
 }
 
-.enlaces div {
+/* .enlaces div {
     background-color: var(--colorSecundario);
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
@@ -80,12 +82,13 @@ a {
     border-radius: 1rem;
 }
 
-.enlaces .b {
+.enlaces .buscador  {
     color: gray;
     display: flex;
     justify-content: start;
     font-size: var(--tamañoTexto);
-}
+} */
+
 
 
 
