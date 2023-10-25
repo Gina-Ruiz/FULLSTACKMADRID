@@ -38,3 +38,9 @@ html {
     border-bottom-left-radius: 1rem;
     padding: 1rem;
 }
+
+
+.onePiece{
+    border: #FBE1FE;
+    grid-template-rows: 1fr 1fr 1fr;
+}

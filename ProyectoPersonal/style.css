@@ -3,7 +3,7 @@
     --colorSecundario: #FBE1FE;
     --tamañoTexto: 1rem;
     --colorTextosecundario: white;
-    --funtePrincipal:'Mulish', sans-serif;
+    --funtePrincipal: 'Mulish', sans-serif;
 
 }
 
@@ -83,15 +83,15 @@ a {
     border-radius: 1rem;
 }*/
 
-.enlaces .buscador  {
+.enlaces .buscador {
     color: gray;
     display: flex;
     justify-content: start;
     font-size: var(--tamañoTexto);
 
-} 
+}
 
-input{
+input {
     background-color: var(--colorSecundario);
     padding: 0.3rem;
     padding-right: 35rem;
@@ -103,26 +103,27 @@ input{
 
 }
 
-button{
-background-color: var(--colorSecundario);
-padding: 0.3rem;
-border: none;
-border-radius:0 1.5rem 1.5rem 0 ;
+button {
+    background-color: var(--colorSecundario);
+    padding: 0.3rem;
+    border: none;
+    border-radius: 0 1.5rem 1.5rem 0;
 }
 
 /* SECCION MAIN/BANER */
 
 .main {
-    background-color: var(--colorSecundario);
+    /* background-color: var(--colorSecundario); */
+  
 }
 
 .baner {
 
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 2rem;
+    
+   background-image: url(./img/OnePiecePrincipal.jpg);
+    background-size: cover;
+  
+
 
 }
 
@@ -300,14 +301,14 @@ border-radius:0 1.5rem 1.5rem 0 ;
 
 /* .noticias {
 
-} */
+}
 
 
 
 .gridNoticias {
 
     border: 0.1rem solid white;
-   display: flex;
+    display: flex;
 }
 
 
@@ -375,4 +376,4 @@ border-radius:0 1.5rem 1.5rem 0 ;
 .info .preguntasFrecuentes {
 
     width: 50vw;
-}
+} 
