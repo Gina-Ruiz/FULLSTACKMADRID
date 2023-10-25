@@ -129,6 +129,15 @@ P: ARRAY, VALOR*/
 
 
 
+
+
+
+
+
+
+
+
+
 function numBoolean(arr, valor) {
     // Inicializa un contador para contar los elementos coincidentes.
     let count = 0;
@@ -364,6 +373,9 @@ palabras("buenos dias")
 F: ELIMINADUPLICADOS
 P: ARRAY
 */
+
+
+
 
 
 
