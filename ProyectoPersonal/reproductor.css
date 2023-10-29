@@ -17,7 +17,7 @@ html {
     font-size: 62, 5%;
     font-family: 'Mulish', sans-serif;
 
-   
+
 }
 
 
@@ -34,13 +34,35 @@ html {
 .navegacion {
 
     background-color: var(--colorPincipal);
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    padding: 1rem;
+
+    padding: 2rem;
 }
 
 
-.onePiece{
-    border: #FBE1FE;
-    grid-template-rows: 1fr 1fr 1fr;
+
+
+.partePrincipal {
+    background-color: green;
+    width: 100%;
+    height: 50vh;
+
+}
+
+
+.partePrincipal .imagen {
+    width: 25rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: flex;
+    justify-content: left end;
+
+}
+
+.partePrincipal .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+
 }

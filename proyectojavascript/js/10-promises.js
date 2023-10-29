@@ -102,7 +102,7 @@ function descargarPedidos() {
     })
 }
 
-descargarPedidos();
+console.log(descargarPedidos());
 
 // async function app() {
 //     let asyncPedidos = await descargarPedidos();

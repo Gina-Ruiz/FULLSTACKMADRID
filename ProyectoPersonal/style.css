@@ -114,15 +114,15 @@ button {
 
 .main {
     background-color: var(--colorSecundario);
-  
+
 }
 
-.baner {
+.baner  {
 
-    
-   background-image: url(./img/OnePiecePrincipal.jpg);
-    background-size: cover;
-  
+    /* background-image: url(./img/OnePiecePrincipal.jpg); */
+
+    width: 100%;
+    height: 100%;
 
 
 }
@@ -376,4 +376,4 @@ button {
 .info .preguntasFrecuentes {
 
     width: 50vw;
-} 
+}
