@@ -3,6 +3,9 @@
     --colorSecundario: #FBE1FE;
     --tamañoTexto: 1rem;
     --colorTextosecundario: white;
+    --funtePrincipal: 'Mulish', sans-serif;
+    --fuenteSecundaria: 'Playfair Display', serif;
+
 
 }
 
@@ -33,8 +36,7 @@ html {
 
 .navegacion {
 
-    background-color: var(--colorPincipal);
-
+    background-color: plum;
     padding: 2rem;
 }
 
@@ -42,27 +44,103 @@ html {
 
 
 .partePrincipal {
-    background-color: green;
+    background-color:plum;
+    border-bottom-left-radius:1rem ;
+    border-bottom-right-radius:1rem ;
     width: 100%;
-    height: 50vh;
-
-}
-
-
-.partePrincipal .imagen {
-    width: 25rem;
-    height: 20rem;
+    height: 55vh;
     display: flex;
-    flex-direction: flex;
-    justify-content: left end;
+    flex-direction: column-reverse;
 
 }
 
-.partePrincipal .texto {
+
+.partePrincipal img {
+    width: 55rem;
+    height: 25rem;
+    margin-left: 3rem;
+    margin-bottom: 0;
+    border-radius: 0.3rem;
+}
+
+.partePrincipal h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 18%;
+    left: 52%;
+    font-size: 6rem;
+    font-family: var(--fuenteSecundaria)
+}
+
+.sinopsis {
+    /* width: 100%;
+    height: 50vh; */
+}
+
+.sinopsisTextoImagen {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+}
+
+.sinopsis h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--fuenteSecundaria);
+    padding: 4rem;
+    font-size: 2.5rem;
+}
+
+.texto {
+    width: 50%;
+    font-size: 1.9rem;
+    font-family: var(--fuenteSecundaria);
+}
+
+.sinopsisTextoImagen img {
+    width: 100%;
+    height: 100vh;
+    margin-left: 2rem;
+}
 
 
+/* SECCION VIDEO */
 
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.video h2 {
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-family: var(--fuenteSecundaria);
+}
+
+/* SECCION PERSOAJES PRINCIPALES */
+
+.personajes h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: var(--fuenteSecundaria);
+}
+
+
+.personajes img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.personajes .imagenPersonajes {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 10rem;
 }
