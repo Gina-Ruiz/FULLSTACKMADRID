@@ -81,3 +81,26 @@ resultado= meses.includes("mayo");
 console.log("USO DE INCLUDES PARA BUSCAR EN ARRAY PLANO",resultado);
 
 
+// METODO SOME
+
+resultado = carrito.some(function (producto) {
+    return producto.nombre === "Tablet" //ME DEVOLVERÁ TRUE/FALSE
+});
+
+console.log("RESULTADO DE FUNCION SOME IDEAL", resultado);
+
+// METODO REDUCE
+
+resultado = carrito.reduce(function (total=0, producto) { // PARA ITERAR
+    // TOTAL, PRODUCTO SON LOS PARAMETROS DE LA FUNCION
+    return total + producto.precio
+}, 0); // EL VALOR DONDE INICIA
+console.log("USO DE REDUCE", resultado);
+
+// METODO FILTER
+
+resultado = carrito.filter(function (X) {
+    return X.precio <= 1
+});
+console.log("USO DE FILTER", resultado);
+

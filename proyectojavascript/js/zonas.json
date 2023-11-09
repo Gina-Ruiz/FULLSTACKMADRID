@@ -1,0 +1,35 @@
+{
+    "zonas" :[
+        {
+            "id":1,
+            "zona":"Zona Norte",
+            "ciudades":"programador",
+            "enlacesZonas":"",
+            "enlacesCursos":""
+
+        },
+        {
+            "id":2,
+            "zona":"Zona Sur",
+            "ciudades":"marketing",
+            "enlacesZonas":"",
+            "enlacesCursos":""
+        },
+        {
+            "id":3,
+            "zona":"Zona Este",
+            "ciudades":"servidores",
+            "enlacesZonas":"",
+            "enlacesCursos":""
+        },
+        {
+            "id":4,
+            "zona":"Zona Centro",
+            "ciudades":"Desarrollo videojuegos",
+            "enlacesZonas":"",
+            "enlacesCursos":""
+        }
+    ]
+}
+
+

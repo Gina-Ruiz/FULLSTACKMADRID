@@ -433,6 +433,14 @@ sumaExpresion(7, 2, 7)
 
 
 
+// EJERCICIO3
+// CREAR UNA FUNCIÓN DE FLECHA QUE DADOS 2 PARÁMETROS 
+// ME DE 10 VECES LA SUMA DE AMBOS
+
+
+let sumarParametros=(n1,n2) => (n1+n2)*10;
+
+console.log(sumarParametros(10,20))
 
 
 
@@ -441,6 +449,8 @@ sumaExpresion(7, 2, 7)
 
 
 
+let ejercicio1 = (n1, n2) => console.log("resultado de la operacion", (n1 + n2) * 10);
+ejercicio1(4, 7);
 
 
 
@@ -449,9 +459,28 @@ sumaExpresion(7, 2, 7)
 
 
 
+// CREAR UNA FUNCIÓN DE FLECHA QUE DADO DOS PARÁMETROS
+// ME INDIQUE EL NÚMERO DE CARACTERES DE LOS DOS
 
 
-//FUNCION DE FLECHA
+let caracteres = (x,y) => (x.length)+(y.length);
+console.log(caracteres("hola", "adios"))
+
+
+function caracteresDeclaracion(x,y){
+    return (x.length)+(y.length);
+}
+console.log(caracteresDeclaracion("hola","adios"))
+
+
+
+
+
+
+
+let ejercicio2 = (p1, p2) => console.log("resultado ejercicio2", (p1 + p2).length);
+
+ejercicio2("nomre", "apellido");
 
 
 //CREAR UNA FUNCION DE FLECHA QUE DADOS 2 PARAMETROS ME DE 10 VECES LA SUMA DE AMBOS 

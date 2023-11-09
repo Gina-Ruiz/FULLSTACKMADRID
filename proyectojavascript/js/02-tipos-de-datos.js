@@ -234,3 +234,31 @@ console.log(`NOMBRE Y EMAIL CONCATENADOS: ${nombre} ${email}`);
 //BOOLEAN
 
 
+// SOLO TRABAJAN DOS VALORES 
+// CREAR TRES VARIABLES
+// BOOLEAN1 VALOR VERDADERO
+// BOOLEAN2 VALOR FALSO
+// BOOLEAN3 "TRUE"
+
+
+
+let boolean1 = true;
+let boolean2 = false;
+let boolean3 = "true";
+
+console.log("TIPO DATO BOOLEAN1:", typeof boolean1);
+console.log("TIPO DATO BOOLEAN2:", typeof boolean2);
+console.log("TIPO DATO BOOLEAN3:", typeof boolean3);
+
+let boolean4 = new Boolean(true);
+console.log("TIPO DATO BOOLEAN4:", typeof boolean4);
+
+/*
+MOSTRARLOS POR PANTALLA
+
+USO REAL: AUTENTICACION DE UN USUARIO, DARLE ACCESO A CIERTAS PARTES DE LA WEB
+SI AUTENTICACION ES TRUE, PERMITIR ACCESO, SI NO, DENEGAR
+
+OTRA FORMA DE CREAR BOOLEANOS
+const boolean4 = new Boolean(true); POCO UTILIZADA, UTILIZAREMOS LA PRIMERA
+*/

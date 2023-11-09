@@ -1,36 +1,7 @@
 
-/*
-*******************
-    COMIENZO CLASE 2023/10/23
-*******************
-
-/*
-!!!!!!!!!!!!!
-REPASO ULTIMO DÍA
-
-for(let i=0; i<10; i++)             ///////FOR
-{
-    console.log(i)
-}
-
-
-let i=0;                            ///////WHILE
-while(i<10){
-    console.log(i);
-    i++;
-}
-
-
-let i=0;                            ////////DO WHILE
-do{
-    console.log(i);
-    i++;
-}while(i<10)
-
-
-función que invierta una cadena.
-F: INVERTIR
-P: CADENA*/
+// función que invierta una cadena.
+// F: INVERTIR
+// P: CADENA
 
 let cadenaF = "";
 function invertir(cadena) {
@@ -52,16 +23,10 @@ P: CADENA1, CADENA2
 */
 
 function concatenar(cadena1, cadena2) {
-    console.log(cadena1 + cadena2);
-}
-
-concatenar("hola ", "hi");
-
-
-function concatenar(cadena1, cadena2) {
     return cadena1 + " " + cadena2;
 
 }
+
 let concatenacionCompleta = concatenar
 console.log("hola", "que tal");
 
@@ -74,6 +39,7 @@ P: CADENA, LETRA*/
 
 function CONTIENE(CADENA, LETRA) {
     return CADENA.includes(LETRA)
+
 }
 let contieneLetra = CONTIENE("ejemplo de cadena", "i")
 console.log(contieneLetra)
@@ -114,29 +80,6 @@ MINNUM(num)
 /*función que cuente la cantidad de elementos booleanos verdadero/falso en un array.
 F: NUMBOOLEANOS
 P: ARRAY, VALOR*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function numBoolean(arr, valor) {
     // Inicializa un contador para contar los elementos coincidentes.
@@ -562,8 +505,3 @@ function reemplazar(texto, letra1, letra2) {
   const textoModificado = reemplazar(textoOriginal, 'L', 'J');
   console.log(textoModificado);
   
-
-/*!!!!!!!!!!!!!!!!
-PASAMOS AL 08-foreach-map-this.js
-
-*/

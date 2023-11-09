@@ -1,43 +1,75 @@
-
-
-console.log("MI PRIMER OBJETO producto: ",producto);
-console.log(`MI PRIMER OBJETO CON TEMPLATE STRING ${producto}`,producto);
-
+// use strict; // CORRER JS EN MODO ESTRICTO
 /*
 
-ESTRUCTURA DE UN OBJETO
+  
 
-let/var/const NombreDelObjeto = {
-    propiedad o llave del objeto : valor,
-    mas propiedades : valor,
-    .
-    .
-    .
-}
+OBJETOS EN JAVASCRIPT
+
+    SON CONTENEDORES DE PROPIEDADES, DONDE UNA PROPIEDAD TIENE 
+    NOMBRE Y VALOR
+    ES LO MÁS UTILIZADO, ES LA COLUMNA VERTEBRAL DE JAVASCRIPT
+
+    !!!!!!!!!!!!!!!
+    EJERCICIO
+    CREAR 3 VARIABLES CON LET Y ASIGNAR VALORES
+
+    nombreProducto
+    precio
+    disponible
+
+    UN OBJETO ES UNA VARIABLE QUE CONTENGA TODAS LAS PROPIEDADES ANTERIORES
+
+    LA VARIABLE ES EL OBJETO
+    LO QUE CONTIENE SON PROPIEDADES
+    */
 
 
-SINTAXIS DE PUNTO
-PARA ACCEDER A LAS PROPIEDADES DEL OBJETO
 
-*/
 
-console.log("USO DE SINTAXIS DE PUNTO producto.precio:", producto.precio);
+    let producto = {
+        nombreProducto: "Reloj",
+        precio: 65,
+        disponible: true
+    }
 
-console.log(`USO DE SINTAXIS DE PUNTO CON TEMPLATE STRING: ${producto.precio}`);
-// console.log("USO DE SINTAXIS DE PUNTO, producto.precio: ",producto.precio);
+    console.log("MI PRIMER OBJETO producto: ",producto);
+    console.log(`MI PRIMER OBJETO CON TEMPLATE STRING ${producto}`,producto);
 
-//OTRA FORMA DE ACCEDER A LAS PROPIEDADES DE UN OBJETO, SE USA MENOS
+    /*
 
-console.log("USO DE CORCHETES",producto["precio"]);
+    ESTRUCTURA DE UN OBJETO
+
+    let/var/const NombreDelObjeto = {
+        propiedad o llave del objeto : valor,
+        mas propiedades : valor,
+        .
+        .
+        .
+    }
+
+
+    SINTAXIS DE PUNTO
+    PARA ACCEDER A LAS PROPIEDADES DEL OBJETO
+
+    */
+
+    console.log("USO DE SINTAXIS DE PUNTO producto.precio:", producto.precio);
+
+    console.log(`USO DE SINTAXIS DE PUNTO CON TEMPLATE STRING: ${producto.precio}`);
+    // console.log("USO DE SINTAXIS DE PUNTO, producto.precio: ",producto.precio);
+
+    //OTRA FORMA DE ACCEDER A LAS PROPIEDADES DE UN OBJETO, SE USA MENOS
+
+    console.log("USO DE CORCHETES",producto["precio"]);
 
 /* 
 MODIFICAR OBJETOS
 
-UNA CARACTERISTICAS QUE TIENEN LOS OBJETOS ES QUE PODEMOS A
-AGREGAR, QUITAR Y MODIFICAR INFORMACIÓN DE ELLOS
+    UNA CARACTERISTICAS QUE TIENEN LOS OBJETOS ES QUE PODEMOS A
+    AGREGAR, QUITAR Y MODIFICAR INFORMACIÓN DE ELLOS
 
-VAMOS AÑADIR UNA PROPIEDAD NUEVA AL OBJETO producto
-QUE YA TENEMOS CREADO
+    VAMOS AÑADIR UNA PROPIEDAD NUEVA AL OBJETO producto
+    QUE YA TENEMOS CREADO
 */
 
 producto.categoria = "joyería";
@@ -97,9 +129,9 @@ SACAR DE UNA ESTRUCTURA
 CREAMOS LA VARIABLE Y EXTRAE EL VALOR
 TODO EN UN SOLO PASO
 
-CREA LA VARIABLE
-EXTRAE EL VALOR
-LA VARIABLE LA LLAMA IGUAL QUE LA PROPIEDAD
+    CREA LA VARIABLE
+    EXTRAE EL VALOR
+    LA VARIABLE LA LLAMA IGUAL QUE LA PROPIEDAD
 */
 
 // DESTRUCTURING AL PRECIO
@@ -108,7 +140,19 @@ LA VARIABLE LA LLAMA IGUAL QUE LA PROPIEDAD
 let {precio,categoria} = producto;
 
 
+/*
 
+    let producto = {
+        nombreProducto: "Reloj",
+        precio: 65,
+        disponible: true,
+        categoria: "relojes"
+    }
+
+
+
+
+*/
 
 
 
@@ -124,30 +168,30 @@ console.log(`CREAMOS VARIABLE precio ${precio} y categoria CON DESTRUCTURING:  $
 
 
 /*
-!!!!!!!!!!!!!!!!!!!!!
-EJERCICIO
-CREAR UN OBJETO QUE SE LLAME playa
-CON LAS SIGUIENTES PROPIEDADES:
-- nombrePlaya
-- ubicacion
-- recomendable (boolean)
-- temperaturaAgua (numero)
-HACER DESTRUCTURING A LAS PROPIEDADES Y MOSTRAR LA INFO POR CONSOLA
-CON TEMPLATE STRING
+    !!!!!!!!!!!!!!!!!!!!!
+    EJERCICIO
+    CREAR UN OBJETO QUE SE LLAME playa
+    CON LAS SIGUIENTES PROPIEDADES:
+    - nombrePlaya
+    - ubicacion
+    - recomendable (boolean)
+    - temperaturaAgua (numero)
+    HACER DESTRUCTURING A LAS PROPIEDADES Y MOSTRAR LA INFO POR CONSOLA
+    CON TEMPLATE STRING
 
-EN LA PLAYA xxxx QUE ESTÁ EN xxxxx EL AGUA ESTÁ A xxxxx. TE LA RECOMIENDO: xxxx
+    EN LA PLAYA xxxx QUE ESTÁ EN xxxxx EL AGUA ESTÁ A xxxxx. TE LA RECOMIENDO: xxxx
 
 */
 
 
 const playa = {
 
-nombrePlaya: "Isleta",
-ubicacion: "Barcelona",
-recomendable: true,
-temperaturaAgua: 30
+    nombrePlaya: "Isleta",
+    ubicacion: "Barcelona",
+    recomendable: true,
+    temperaturaAgua: 30
 }
-
+   
 let {nombrePlaya,ubicacion,recomendable,temperaturaAgua} = playa;
 
 console.log(`En la playa ${nombrePlaya} que esta en ${ubicacion} 
@@ -173,11 +217,11 @@ playa.tipoArena="arena limpia";
 
 MÉTODOS PARA LOS OBJETOS
 
-UN OBJETO A PESAR DE ESTAR CREADO CON CONST, SI QUE PODEMOS
-AÑADIR Y ELIMINAR PROPIEDADES. ES UNA CARACTERISTICA DE LOS OBJETOS
+    UN OBJETO A PESAR DE ESTAR CREADO CON CONST, SI QUE PODEMOS
+    AÑADIR Y ELIMINAR PROPIEDADES. ES UNA CARACTERISTICA DE LOS OBJETOS
 
-SI QUEREMOS CONGELAR UN OBJETO PARA QUE NO SE PUEDAN MODIFICAR LAS 
-PROPIEDADES, HACEMOS USO DE Object.freeze(producto);
+    SI QUEREMOS CONGELAR UN OBJETO PARA QUE NO SE PUEDAN MODIFICAR LAS 
+    PROPIEDADES, HACEMOS USO DE Object.freeze(producto);
 */
 
 Object.freeze(producto);
@@ -217,14 +261,14 @@ producto.disponible = false; //NO ME MODIFICARÁ EL VALOR DE LA PROPIEDAD,
 PUES ESTÁ CONGELADO CON FREEZE
 
 CON EL METODO Object.freeze
-NO PODEMOS AÑADIR PROPIEDADES
-NO PODEMOS BORRAR PROPIEDADES
-NO PODEMOS MODIFICAR PROPIEDADES
+    NO PODEMOS AÑADIR PROPIEDADES
+    NO PODEMOS BORRAR PROPIEDADES
+    NO PODEMOS MODIFICAR PROPIEDADES
 
 CON EL MÉTODO Object.Seal
-NO PODEMOS AÑADIR PROPIEDADES
-NO PODEMOS BORRAR PROPIEDADES
-SI PODEMOS MODIFICAR PROPIEDADES
+    NO PODEMOS AÑADIR PROPIEDADES
+    NO PODEMOS BORRAR PROPIEDADES
+    SI PODEMOS MODIFICAR PROPIEDADES
 
 !!!!!!!!!!!!!!
 EJERCICIO
@@ -236,10 +280,10 @@ A CONTINUACIÓN MODIFICAR UNA DE ESAS PROPIEDADES
 */
 
 let medidas = {
-peso:14,
-alto:16,
-ancho:123.3,
-profundidad:1/3
+    peso:14,
+    alto:16,
+    ancho:123.3,
+    profundidad:1/3
 };
 
 Object.seal(medidas);
@@ -266,8 +310,5 @@ console.log ("NUEVO OBJETO CON SPREAD OPERATOR:",nuevoProducto);
 const nuevoProducto = {...producto, ...medidas}; //ME AÑADE 
 // A UN NUEVO OBJETO LLAMADO nuevoProducto TODAS LAS PROPIEDADES DE
 // LOS OBJETOS, productos y medidas
-console.log ("NUEVO OBJETO CON SPREAD OPERATOR:",nuevoProducto)
-;
-
-CREAMOS EL 04-arrays.js Y COMENTAMOS EL 03-objetos.js
+console.log ("NUEVO OBJETO CON SPREAD OPERATOR:",nuevoProducto);
 */
